@@ -8,28 +8,8 @@ Based on the following tutorials:
 
 ## Prerequisites
 
-- Complete [Lab 1 - Create a CI/CD pipeline for .NET with the Azure DevOps Project](lab-1-azure-devops-project-pipeline.md).
+- Complete [Lab 1 - Create a CI/CD pipeline for .NET with the Azure DevOps Project](lab1And2/lab-1-azure-devops-project-pipeline.md).
 
 ## Tasks
 
-First, let's define the QA environment:
-
-1. Add a QA Deployment Slot to your App Service in Azure
-
-1. Add a QA environment to your Release Definiton in VSTS
-
-1. Configure the deployment step for the QA slot in the same App Service
-
-1. Run a new Release
-
-1. Review the new QA website is live on \<yourappservice\>-qa.azurewebsites.net
-
-Use approvals and gates to control your deployment
-
-1. Add pre deployment approval to control promotion from QA to Production
-
-1. Add gate on 'Active Bugs' = 0
-
-## Next steps
-
-Continue with [Lab 3 - Analysis with SonarQube](lab-3-analysis-with-sonarqube.md).
+- Follow the steps in the following [Multi staging deployments](lab1And2/lab-2-multi-stage-deployments.md)

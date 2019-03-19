@@ -29,13 +29,13 @@ have created against it.
 1. Go to your **account’s homepage**:
 	https://dev.azure.com/<your-alias\>
 2. Click the top right corner icon(profile icon). And then choose the Preview features.
-![](<./lab1And2/media/ChangeSetting.png>)
+![](<media/ChangeSetting.png>)
 3. After clicking the Preview features, scroll down the popup and  keep the "New YAML pipeline creation experience"  to off.
-![](<./lab1And2/media/PreviewFeatures.png>)
+![](<media/PreviewFeatures.png>)
 4. Select the DevOpsHOL team project that was created in the [Getting Started](README.md) lab.  
 This will take you to the project dashboard page.  From the menu on the left side of the page, choose Pipelines -> Builds. Now click on the **New Pipeline** button.  On the "Select your repository" page, make sure everything is correct and then click **Continue**.  
 5. After Continue, You will the following Screen.
-![](<./lab1And2/media/EmptyJob.png>)
+![](<media/EmptyJob.png>)
 5. Select the **Empty job**  link near the top to create a build definition.  
 >**Note:** Normally you would just select one of the available templates that is closest to the type of solution you are 
 deploying but for this lab we want to walk through a few extra steps to allow you to become more familiar with the process.
@@ -73,7 +73,7 @@ deploying but for this lab we want to walk through a few extra steps to allow yo
 >> "Verify using below image that Your task have following Plugins in your PipeLine."
 
 
-![](<./lab1And2/media/PipeLine.png>)
+![](<media/PipeLine.png>)
 
 6. Click on the **Variables** tab and add the following Variables:
 >- **BuildConfiguration** with a value of **release**
@@ -115,7 +115,7 @@ changes, or if they broke one or more automated tests, or if your changes are a 
 Next do the Continuous Deployment 
 
 ## Shortcut ##
-1. Download the [DevOpsHOL-CI.json](./lab1And2/DevOpsHOL-CI.json) file locally
+1. Download the [DevOpsHOL-CI.json](DevOpsHOL-CI.json) file locally
 2. Go to your project home page and select the **Build and Release** menu item.
 3. Click the **+Import** button and select the file downloaded in step 1 and click Import.
 4. After the import choose the Hosted VS2017 agent and click on the "Get Sources" process step and verify that it is correctly configured as described above.
