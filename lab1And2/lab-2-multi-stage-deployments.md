@@ -132,6 +132,11 @@ NOTE: The website address can be seen on the Azure portal on the WebApp
 15. Now go back into Visual Studio and make a change to the code that will be visible in the application.  Observe the status of the Build and Release and verify that all the items configured in the CI and CD labs complete successfully.<br>
 NOTE: If the Release fails with error "ERROR_FILE_IN_USE", execute [these steps](#errors).
 
+# Use approvals and gates to control your deployment
+[Add Approvals and Gates](https://docs.microsoft.com/en-us/azure/devops/pipelines/release/deploy-using-approvals?view=azure-devops)
+
+Add pre deployment approval to control promotion from Staging to Production
+Add gate on 'Active Bugs' = 0
 	
 # Shortcut
 Just like in the previous lab, you can use the import functionality with the [DevOpsHOL-CD.json](../Json-Files/DevOpsHOL-CD.json) file to import the release definition to keep from having to create this by hand but you miss out on the joy of learning.
@@ -150,6 +155,7 @@ and modify the settings to require approvals prior to deploying to the next envi
 >+ Use the ARM template and the Visual Studio deployment and publish process to create an individual Azure environment in addition to the Dev, Stage and production environments.
 >+ Delete the DevOpsHOL resource group and re-release the same build to make sure that the environments can be dynamically re-created.
 >+ Export the build and release definitions.  Check them into source control.  Delete these definitions and restore from the source files.
+
 
 2. Next do the [UI Testing](../ui-testing/README.md) lab
 
