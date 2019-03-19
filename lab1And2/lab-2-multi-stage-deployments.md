@@ -133,9 +133,11 @@ NOTE: The website address can be seen on the Azure portal on the WebApp
 NOTE: If the Release fails with error "ERROR_FILE_IN_USE", execute [these steps](#errors).
 
 # Use approvals and gates to control your deployment
+
 [Add Approvals and Gates](https://docs.microsoft.com/en-us/azure/devops/pipelines/release/deploy-using-approvals?view=azure-devops)
 
 Add pre deployment approval to control promotion from Staging to Production
+Add your id as Approver name. Usually In real time project, you can add many approvers based on your requirments.
 Add gate on 'Active Bugs' = 0
 	
 # Shortcut
